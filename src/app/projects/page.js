@@ -12,21 +12,21 @@ export const Progectss = [
     Tipe: "wordpress",
     imagee: "/projects/dr-needs.png",
     URL: "https://dr-needs.com/",
-    code: "#",
+    code: "https://dr-needs.com/",
   },
   {
     name: "Dwana",
     Tipe: "wordpress",
     imagee: "/projects/dwana.png",
     URL: "https://dwana.net/",
-    code: "#",
+    code: "https://dwana.net/",
   },
   {
     name: "Klinder-Design",
     Tipe: "wordpress",
     imagee: "/projects/klinder-design.png",
     URL: "https://klinder-design.com/",
-    code: "#",
+    code: "https://klinder-design.com/",
   },
   {
     name: "Metaverse",
@@ -39,7 +39,7 @@ export const Progectss = [
     name: "Next-Blog",
     Tipe: "next",
     imagee: "/projects/next-blog.png",
-    URL: "https://github.com/MontagabAlHamawy/Next-Blog",
+    URL: "https://klinder-blog.vercel.app/",
     code: "https://github.com/MontagabAlHamawy/Next-Blog",
   },
   {
