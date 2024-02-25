@@ -1,10 +1,10 @@
 # My Portfolio
 
-This project is my personal portfolio designed with a minimalist layout to reflect an image about me. I showcased some of my previous works in it and listed the programming skills I've learned. This website was built using `Next.js` and `Tailwind CSS`.
+Hi am `Montagab`,This project is my personal portfolio designed with a minimalist layout to reflect an image about me. I showcased some of my previous works in it and listed the programming skills I've learned. This website was built using `Next.js` and `Tailwind CSS`.
 
 ## Project Link
 
-[https://montagab.vercel.app/](https://montagab.vercel.app/)
+[Portfolio](https://montagab.vercel.app/)
 
 
 ## Getting Started
