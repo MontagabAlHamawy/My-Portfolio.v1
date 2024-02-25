@@ -10,12 +10,15 @@ import {
   FaSquareJs,
   FaWordpress,
   FaGit,
+  FaType
 } from "react-icons/fa6";
+import { BiLogoTypescript } from "react-icons/bi";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 export const ProgramS = [
   { name: "HTML", Experience: 93, icone: <FaHtml5 /> },
   { name: "CSS", Experience: 90, icone: <FaCss3 /> },
   { name: "JS", Experience: 68, icone: <FaSquareJs /> },
+  { name: "TS", Experience: 25, icone: <BiLogoTypescript /> },
   { name: "React", Experience: 20, icone: <FaReact /> },
   { name: "Next.js", Experience: 35, icone: <SiNextdotjs /> },
   { name: "Bootstrap", Experience: 55, icone: <FaBootstrap /> },
