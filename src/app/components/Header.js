@@ -32,7 +32,7 @@ function Header() {
       <div className="flex flex-col xl:flex-row gap-y-4 justify-between px-10 py-6 w-full items-center ">
         <motion.div variants={fadeIn("down", "tween", 0.2, 1)}>
           {/* <Image src={"/logo2.png"} width={100} height={100} alt="logo" /> */}
-          <Link href='/'>
+          <Link href='/' aria-label="Home" >
             <h1 className="text-xl text-accent backdrop-blur-sm drop-shadow-sm">MONTAGAB</h1>
           </Link>
         </motion.div>
@@ -42,7 +42,7 @@ function Header() {
         >
           {HeadData.map((link, index) => {
             return (
-              <Link key={index} href={link.path}>
+              <Link key={index} href={link.path} aria-label={link.name} >
                 <nav className="text-2xl xl:text-xl text-white hover:text-accent transition-all">
                   {link.icone}
                 </nav>

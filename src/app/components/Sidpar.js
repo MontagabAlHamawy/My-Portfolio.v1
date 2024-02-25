@@ -42,6 +42,7 @@ function Sidpar() {
             <Link
               key={index}
               href={link.path}
+              aria-label={link.name}
               className="flex gap-x-5 group hover:text-accent"
             >
               <div className="absolute transition-all pl-20 left-0 hidden xl:group-hover:flex w-max">
