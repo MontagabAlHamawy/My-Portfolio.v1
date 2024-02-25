@@ -8,6 +8,7 @@ import Link from "next/link";
 
 const Contact = () => {
   const [status, setStatus] = useState("");
+
   useEffect(() => {
     // Initialize EmailJS with your User ID
     emailjs.init("E3kZsQH8AGosAgdNy");
@@ -15,6 +16,16 @@ const Contact = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    // Check if any of the fields are empty
+    const nameField = document.getElementById("from_name");
+    const emailField = document.getElementById("email_id");
+    const messageField = document.getElementById("message");
+
+    if (!nameField.value || !emailField.value || !messageField.value) {
+      setStatus("Please fill out all fields");
+      return;
+    }
 
     const btn = document.getElementById("button");
     btn.value = "Sending...";
@@ -97,7 +108,7 @@ const Contact = () => {
               Email
             </label>
             <input
-              type="text"
+              type="email"
               name="email_id"
               id="email_id"
               className="border rounded w-full py-2 px-3"
