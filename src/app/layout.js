@@ -1,16 +1,18 @@
-import { Inter } from "next/font/google";
+import { Roboto_Mono  } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import Sidpar from "./components/Sidpar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+export const roboto = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: "Montagab",
   description: "Front-End Developer",
-  icone: '/icon.png',
 };
 
 export default function RootLayout({ children }) {
@@ -22,7 +24,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/icon.png" />
         <title>Montagab</title>
       </Head>
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <div>
           <Header />
           <Sidpar />

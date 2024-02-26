@@ -22,7 +22,7 @@ export const ProgramS = [
   { name: "React", Experience: 20, icone: <FaReact /> },
   { name: "Next.js", Experience: 35, icone: <SiNextdotjs /> },
   { name: "Bootstrap", Experience: 55, icone: <FaBootstrap /> },
-  { name: "Tailwind Css", Experience: 67, icone: <SiTailwindcss /> },
+  { name: "Tailwind", Experience: 67, icone: <SiTailwindcss /> },
   { name: "WordPress", Experience: 40, icone: <FaWordpress /> },
   { name: "Git", Experience: 53, icone: <FaGit /> },
 ];
