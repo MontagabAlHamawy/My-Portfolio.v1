@@ -13,6 +13,7 @@ import {
   PiHourglass,
 } from "react-icons/pi";
 
+
 function About() {
   return (
     <motion.div
@@ -29,21 +30,30 @@ function About() {
         >
           About
         </motion.h1>
-        <div >
-          <motion.p variants={fadeIn("up", "tween", 0.2, 1)} className="text-white/80 font-500 text-xl xl:text-lg ">
+        <div>
+          <motion.p
+            variants={fadeIn("up", "tween", 0.2, 1)}
+            className="text-white/80 font-500 text-xl xl:text-lg "
+          >
             Front-End Developer with a passion for creative problem-solving. My
             expertise lies in crafting elegant and responsive web designs, where
             coding is not just a task but a form of artistic expression.
           </motion.p>
           <br />
-          <motion.p variants={fadeIn("up", "tween", 0.3, 1)} className="text-white/80 font-500 text-xl xl:text-lg ">
+          <motion.p
+            variants={fadeIn("up", "tween", 0.3, 1)}
+            className="text-white/80 font-500 text-xl xl:text-lg "
+          >
             My belief is that the webpages we create are a reflection of the
             people who use them. As such, I am committed to enhancing user
             experiences worldwide, making websites more functional and
             enjoyable.
           </motion.p>
           <br />
-          <motion.p variants={fadeIn("up", "tween", 0.4, 1)} className="text-white/80 font-500 text-xl xl:text-lg ">
+          <motion.p
+            variants={fadeIn("up", "tween", 0.4, 1)}
+            className="text-white/80 font-500 text-xl xl:text-lg "
+          >
             With a strong foundation in Next.js, I bring a wealth of experience
             to every project. I am constantly seeking opportunities to further
             refine my skills and stay at the forefront of the ever-evolving
