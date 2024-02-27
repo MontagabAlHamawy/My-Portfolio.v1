@@ -9,10 +9,12 @@ Hi am `Montagab`,This project is my personal portfolio designed with a minimalis
 
 ## Getting Started
 
-First, run the development server:
+To install the Project :
 
 ```bash
 
+git clone https://github.com/MontagabAlHamawy/Portfolio2.git
+# then
 npm i
 # then 
 npm run dev
