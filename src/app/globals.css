@@ -43,7 +43,7 @@ body {
     border-radius: 20px;
   }
   ::-webkit-scrollbar-track {
-    @apply bg-white;
+    @apply bg-[#333441];
   }
   body {
     @apply text-primary bg-body font-sans;
