@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
           <Sidpar />
           <div className="wrapper min-h-[77.1vh] xl:min-h-[90.91vh] pt-40 xl:pt-0">
             {children}
+            <Analytics />
           </div>
           <Footer />
         </div>
