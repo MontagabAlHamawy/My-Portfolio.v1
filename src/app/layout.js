@@ -4,6 +4,7 @@ import Head from "next/head";
 import Sidpar from "./components/Sidpar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { Analytics } from "@vercel/analytics/react"
 
 export const roboto = Roboto_Mono({
   subsets: ['latin'],
