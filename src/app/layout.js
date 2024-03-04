@@ -5,6 +5,7 @@ import Sidpar from "./components/Sidpar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const roboto = Roboto_Mono({
   subsets: ['latin'],
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
           <div className="wrapper min-h-[77.1vh] xl:min-h-[90.91vh] pt-40 xl:pt-0">
             {children}
             <Analytics />
+            <SpeedInsights />
           </div>
           <Footer />
         </div>
