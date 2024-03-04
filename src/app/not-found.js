@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { staggerContainer, fadeIn } from "../utils/motion";
+import { staggerContainer, fadeIn } from "./utils/motion";
 
 export default function NotFound() {
   return (
