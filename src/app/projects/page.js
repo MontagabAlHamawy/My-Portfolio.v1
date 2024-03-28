@@ -8,6 +8,13 @@ import { staggerContainer, fadeIn } from "../utils/motion";
 
 export const Progectss = [
   {
+    name: "3aqarat",
+    Tipe: "next",
+    imagee: "/projects/3aqarat.jpg",
+    URL: "https://3aqarat.vercel.app/",
+    code: "https://github.com/MontagabAlHamawy/3aqarat",
+  },
+  {
     name: "DR-Needs",
     Tipe: "wordpress",
     imagee: "/projects/dr-needs.png",
