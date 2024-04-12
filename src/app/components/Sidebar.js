@@ -24,15 +24,10 @@ function Sidebar() {
   const route = usePathname();
 
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:left-[2%] z-50 top-0 w-full xl:w-16  xl:-max-w-md xl:h-screen"
+    <div
+      className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-[-1px] left-0 mt-auto xl:left-[2%] z-50 top-0 w-full xl:w-16  xl:-max-w-md xl:h-screen"
     >
-      <motion.div
-        variants={fadeIn("right", "tween", 0.2, 1)}
+      <div
         className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-1 px-4 md:px-40 xl:px-0 h-[70px] xl:h-max py-8 bg-white/10  backdrop-blur-3xl text-3xl xl:text-md rounded-tl-xl rounded-tr-xl xl:rounded-full "
       >
         {navData.map((link, index) => {
@@ -65,8 +60,8 @@ function Sidebar() {
             </Link>
           );
         })}
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }
 

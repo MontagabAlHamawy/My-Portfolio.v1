@@ -12,6 +12,11 @@ import {
   PiBagSimpleBold,
   PiHourglass,
 } from "react-icons/pi";
+import { Roboto_Mono } from "next/font/google";
+export const roboto = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 
 function About() {
@@ -26,7 +31,7 @@ function About() {
       <div className="flex gap-y-5 xl:gap-y-10 flex-col pt-7 xl:pt-36 pb-10 xl:pb-20 px-4 xl:px-0 font-extralight">
         <motion.h1
           variants={fadeIn("up", "tween", 0.1, 1)}
-          className="text-2xl xl:text-4xl text-white font-500 uppercase "
+          className={`text-2xl xl:text-4xl text-white font-500 uppercase ${roboto.className}`}
         >
           About
         </motion.h1>

@@ -4,6 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn } from "./utils/motion";
+import { Roboto_Mono } from "next/font/google";
+export const roboto = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 
 export default function Home() {
   return (
@@ -14,10 +20,12 @@ export default function Home() {
       viewport={{ once: false, amount: 0.1 }}
       className=" flex flex-col-reverse xl:flex-row justify-center xl:justify-between items-center mt-20 xl:mt-0 xl:pl-40 xl:pr-32 h-[90vh] gap-y-10 gap-x-20"
     >
+      
       <div className="flex-1 flex justify-center items-start gap-y-5 flex-col px-4 xl:px-0 mb-44 xl:mb-0 xl:pl-0 text-white/80 text-xl xl:text-lg font-extralight">
         <motion.h1
           variants={fadeIn("up", "tween", 0.2, 1)}
-          className="text-2xl xl:text-4xl text-white font-500 uppercase"
+          className={`text-2xl xl:text-4xl text-white font-500 uppercase ${roboto.className}`}
+          // className={}
         >
           Front-End Developer
         </motion.h1>

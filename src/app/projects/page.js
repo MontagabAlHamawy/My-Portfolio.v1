@@ -5,6 +5,11 @@ import { PiCode, PiEye } from "react-icons/pi";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn } from "../utils/motion";
+import { Roboto_Mono } from "next/font/google";
+export const roboto = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const M_Projects = [
   {
@@ -100,7 +105,7 @@ export default function Projects() {
         variants={fadeIn("down", "tween", 0.2, 1)}
         className="text-center"
       >
-        <h1 className="font-500 mt-10 text-2xl text-white font-extralight uppercase">
+        <h1 className={`font-500 mt-10 text-2xl text-white font-extralight uppercase ${roboto.className}`}>
           Projects
         </h1>
       </motion.div>
@@ -109,7 +114,7 @@ export default function Projects() {
         className="grid grid-cols-2 xl:grid-cols-5 gap-x-9 gap-y-2 px-3 xl:px-0 xl:gap-x-6 xl:text-xl"
       >
         <p
-          className={`text-accent flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
+          className={`text-accent text-lg flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
             filterType === "all" && "font-bold bg-white/10"
           } `}
           onClick={() => setFilterType("all")}
@@ -117,7 +122,7 @@ export default function Projects() {
           All
         </p>
         <p
-          className={`text-accent flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
+          className={`text-accent text-lg flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
             filterType === "wordpress" && "font-bold bg-white/10"
           }`}
           onClick={() => setFilterType("wordpress")}
@@ -125,7 +130,7 @@ export default function Projects() {
           WordPress
         </p>
         <p
-          className={`text-accent flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
+          className={`text-accent text-lg flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
             filterType === "next" && "font-bold bg-white/10"
           }`}
           onClick={() => setFilterType("next")}
@@ -133,7 +138,7 @@ export default function Projects() {
           Next
         </p>
         <p
-          className={`text-accent flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
+          className={`text-accent text-lg flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
             filterType === "react" && "font-bold bg-white/10"
           }`}
           onClick={() => setFilterType("react")}
@@ -141,7 +146,7 @@ export default function Projects() {
           React
         </p>
         <p
-          className={`text-accent flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
+          className={`text-accent text-lg flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
             filterType === "static" && "font-bold bg-white/10"
           }`}
           onClick={() => setFilterType("static")}

@@ -14,6 +14,12 @@ import {
 } from "react-icons/fa6";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { Roboto_Mono } from "next/font/google";
+export const roboto = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 export const ProgramS = [
   { name: "HTML", Experience: 93, icon: <FaHtml5 /> },
   { name: "CSS", Experience: 90, icon: <FaCss3 /> },
@@ -43,7 +49,7 @@ function Skills() {
       <div className="xl:mt-10">
         <motion.h1
           variants={fadeIn("down", "tween", 0.2, 1)}
-          className="text-2xl text-white font-extralight uppercase "
+          className={`text-2xl text-white font-extralight uppercase ${roboto.className}`}
         >
           Programming Skills
         </motion.h1>
@@ -82,7 +88,7 @@ function Skills() {
         })}
       </div>
       <motion.div variants={fadeIn("down", "tween", 0.1, 1)} className="mt-20">
-        <h1 className="text-2xl text-white font-extralight uppercase">Languages</h1>
+        <h1 className={`text-2xl text-white font-extralight uppercase ${roboto.className}`}>Languages</h1>
       </motion.div>
       <div className="grid grid-cols-2 gap-x-5 gap-y-5 xl:gap-x-16 xl:gap-y-10 mb-20">
         {Languages.map((link, index) => {

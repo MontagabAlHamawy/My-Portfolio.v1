@@ -1,4 +1,4 @@
-import { Roboto_Mono  } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Head from "next/head";
 import Sidebar from "./components/Sidebar";
@@ -7,10 +7,13 @@ import Header from "./components/Header";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-export const roboto = Roboto_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-})
+export const feather = localFont({
+  src: [
+    {
+      path: '../../public/Feathercut-LightItalic.ttf',
+      weight: '400',
+      style: 'normal',
+    },]})
 
 export const metadata = {
   title: "Montagab",
@@ -19,14 +22,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={roboto.className}>
-       <Head>
+    <html lang="en" className={feather.className}>
+      <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* تحديد أيقونة الموقع هنا */}
         <link rel="icon" href="/icon.png" />
         <title>Montagab</title>
       </Head>
-      <body className={roboto.className}>
+      <body className={feather.className}>
         <div>
           <Header />
           <Sidebar />

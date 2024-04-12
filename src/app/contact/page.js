@@ -5,6 +5,11 @@ import { staggerContainer, fadeIn } from "../utils/motion";
 import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import Link from "next/link";
+import { Roboto_Mono } from "next/font/google";
+export const roboto = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const Contact = () => {
   const [status, setStatus] = useState("");
@@ -54,7 +59,7 @@ const Contact = () => {
       <div className="mt-[-20px] xl:mt-20 mb-4 xl:mb-10">
         <motion.h1
           variants={fadeIn("down", "tween", 0.2, 1)}
-          className="text-2xl text-white font-extralight uppercase"
+          className={`text-2xl text-white font-extralight uppercase ${roboto.className}`}
         >
           Contact us
         </motion.h1>
@@ -73,7 +78,7 @@ const Contact = () => {
         </motion.div>
         <motion.div
           variants={fadeIn("down", "tween", 0.4, 1)}
-          className="flex flex-col justify-center items-center bg-white/10 rounded-md px-6 py-10 w-[350px]"
+          className="flex flex-col justify-center items-center bg-white/10 rounded-md px-6 py-10 min-w-[310px]"
         >
           <h1 className="text-accent font-bold text-lg">Email</h1>
           <Link href={"tel:+963996856640"}>
