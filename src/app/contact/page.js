@@ -62,7 +62,7 @@ const Contact = () => {
       <div className="flex flex-col xl:flex-row justify-center gap-x-20 gap-y-10 items-center">
         <motion.div
           variants={fadeIn("down", "tween", 0.4, 1)}
-          className="flex flex-col justify-center items-center bg-white/10 rounded-md px-6 py-10 min-w-[300px]"
+          className="flex flex-col justify-center items-center bg-white/10 rounded-md px-6 py-10 min-w-[310px]"
         >
           <h1 className="text-accent font-bold text-lg">Email</h1>
           <Link href={"mailto:montagab@klinder-design.com"}>
@@ -73,9 +73,9 @@ const Contact = () => {
         </motion.div>
         <motion.div
           variants={fadeIn("down", "tween", 0.4, 1)}
-          className="flex flex-col justify-center items-center bg-white/10 rounded-md px-6 py-10 min-w-[300px]"
+          className="flex flex-col justify-center items-center bg-white/10 rounded-md px-6 py-10 w-[350px]"
         >
-          <h1 className="text-accent font-bold text-lg">Phone</h1>
+          <h1 className="text-accent font-bold text-lg">Email</h1>
           <Link href={"tel:+963996856640"}>
             <p className="text-white font-extralight mt-1">+963 996 856 640</p>
           </Link>

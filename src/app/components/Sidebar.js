@@ -13,14 +13,14 @@ import { staggerContainer, fadeIn } from "../utils/motion";
 import { usePathname } from "next/navigation";
 
 export const navData = [
-  { name: "Home", path: "/", icone: <PiHouse /> },
-  { name: "About", path: "/about", icone: <PiUser /> },
-  { name: "Skills", path: "/skills", icone: <PiCode /> },
-  { name: "Projects", path: "/projects", icone: <PiProjectorScreenChart /> },
-  { name: "Contact", path: "/contact", icone: <PiPhone /> },
+  { name: "Home", path: "/", icon: <PiHouse /> },
+  { name: "About", path: "/about", icon: <PiUser /> },
+  { name: "Skills", path: "/skills", icon: <PiCode /> },
+  { name: "Projects", path: "/projects", icon: <PiProjectorScreenChart /> },
+  { name: "Contact", path: "/contact", icon: <PiPhone /> },
 ];
 
-function Sidpar() {
+function Sidebar() {
   const route = usePathname();
 
   return (
@@ -60,7 +60,7 @@ function Sidpar() {
                     : "text-white mb-0 xl:mb-0 bg-transparent text-2xl xl:text-xl hover:text-accent"
                 } rounded-full p-5 xl:p-4 cursor-pointer transition-all hover:text-accent`}
               >
-                {link.icone}
+                {link.icon}
               </nav>
             </Link>
           );
@@ -70,4 +70,4 @@ function Sidpar() {
   );
 }
 
-export default Sidpar;
+export default Sidebar;

@@ -6,87 +6,87 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn } from "../utils/motion";
 
-export const Progectss = [
+export const M_Projects = [
   {
     name: "3aqarat",
-    Tipe: "next",
-    imagee: "/projects/3aqarat.jpg",
+    Type: "next",
+    image: "/projects/3aqarat.jpg",
     URL: "https://3aqarat.vercel.app/",
     code: "https://github.com/MontagabAlHamawy/3aqarat",
   },
   {
     name: "DR-Needs",
-    Tipe: "wordpress",
-    imagee: "/projects/dr-needs.png",
+    Type: "wordpress",
+    image: "/projects/dr-needs.png",
     URL: "https://dr-needs.com/",
     code: "https://dr-needs.com/",
   },
   {
     name: "Dwana",
-    Tipe: "wordpress",
-    imagee: "/projects/dwana.png",
+    Type: "wordpress",
+    image: "/projects/dwana.png",
     URL: "https://dwana.net/",
     code: "https://dwana.net/",
   },
   {
     name: "Klinder-Design",
-    Tipe: "wordpress",
-    imagee: "/projects/klinder-design.png",
+    Type: "wordpress",
+    image: "/projects/klinder-design.png",
     URL: "https://klinder-design.com/",
     code: "https://klinder-design.com/",
   },
   {
     name: "Metaverse",
-    Tipe: "next",
-    imagee: "/projects/metaverse.png",
+    Type: "next",
+    image: "/projects/metaverse.png",
     URL: "https://metaverse.klinder-design.com/",
     code: "https://github.com/MontagabAlHamawy/Metaverse",
   },
   {
     name: "Next-Blog",
-    Tipe: "next",
-    imagee: "/projects/next-blog.png",
+    Type: "next",
+    image: "/projects/next-blog.png",
     URL: "https://klinder-blog.vercel.app/",
     code: "https://github.com/MontagabAlHamawy/Next-Blog",
   },
   {
     name: "React-Blog",
-    Tipe: "react",
-    imagee: "/projects/react-blog.png",
+    Type: "react",
+    image: "/projects/react-blog.png",
     URL: "https://montagabalhamawy.github.io/WP-React/",
     code: "https://github.com/MontagabAlHamawy/WP-React",
   },
   {
     name: "Sniper",
-    Tipe: "static",
-    imagee: "/projects/sniper.png",
+    Type: "static",
+    image: "/projects/sniper.png",
     URL: "https://montagabalhamawy.github.io/Sniper/",
     code: "https://github.com/MontagabAlHamawy/Sniper",
   },
   {
     name: "Klinder",
-    Tipe: "static",
-    imagee: "/projects/klinder.png",
+    Type: "static",
+    image: "/projects/klinder.png",
     URL: "https://montagabalhamawy.github.io/Klinder/",
     code: "https://github.com/MontagabAlHamawy/Klinder",
   },
   {
     name: "X-O Game",
-    Tipe: "static",
-    imagee: "/projects/x-o.png",
+    Type: "static",
+    image: "/projects/x-o.png",
     URL: "https://montagabalhamawy.github.io/X-O-Game/",
     code: "https://github.com/MontagabAlHamawy/X-O-Game",
   },
   {
     name: "Notes",
-    Tipe: "static",
-    imagee: "/projects/note.png",
+    Type: "static",
+    image: "/projects/note.png",
     URL: "https://montagabalhamawy.github.io/Notes/",
     code: "https://github.com/MontagabAlHamawy/Notes",
   },
 ];
 
-function Projects() {
+export default function Projects() {
   const [filterType, setFilterType] = useState("all");
   return (
     <motion.div
@@ -106,10 +106,10 @@ function Projects() {
       </motion.div>
       <motion.div
         variants={fadeIn("down", "tween", 0.4, 1)}
-        className="flex justify-center items-center px-3 xl:px-0 xl:gap-x-6 xl:text-xl"
+        className="grid grid-cols-2 xl:grid-cols-5 gap-x-9 gap-y-2 px-3 xl:px-0 xl:gap-x-6 xl:text-xl"
       >
         <p
-          className={`text-accent cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
+          className={`text-accent flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
             filterType === "all" && "font-bold bg-white/10"
           } `}
           onClick={() => setFilterType("all")}
@@ -117,7 +117,7 @@ function Projects() {
           All
         </p>
         <p
-          className={`text-accent cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
+          className={`text-accent flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
             filterType === "wordpress" && "font-bold bg-white/10"
           }`}
           onClick={() => setFilterType("wordpress")}
@@ -125,7 +125,7 @@ function Projects() {
           WordPress
         </p>
         <p
-          className={`text-accent cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
+          className={`text-accent flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
             filterType === "next" && "font-bold bg-white/10"
           }`}
           onClick={() => setFilterType("next")}
@@ -133,7 +133,7 @@ function Projects() {
           Next
         </p>
         <p
-          className={`text-accent cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
+          className={`text-accent flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
             filterType === "react" && "font-bold bg-white/10"
           }`}
           onClick={() => setFilterType("react")}
@@ -141,7 +141,7 @@ function Projects() {
           React
         </p>
         <p
-          className={`text-accent cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
+          className={`text-accent flex justify-center cursor-pointer hover:bg-white/10 transition-all px-3 xl:px-4 py-1 rounded-lg font-light ${
             filterType === "static" && "font-bold bg-white/10"
           }`}
           onClick={() => setFilterType("static")}
@@ -154,8 +154,8 @@ function Projects() {
         variants={fadeIn("up", "tween", 0.6, 1)}
         className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-2 xl:px-0 gap-x-5 gap-y-7 xl:gap-x-12 xl:gap-y-10 font-extralight"
       >
-        {Progectss.filter(
-          (dd) => filterType === "all" || dd.Tipe === filterType
+        {M_Projects.filter(
+          (dd) => filterType === "all" || dd.Type === filterType
         ).map((dd, index) => (
           <div
             key={index}
@@ -163,7 +163,7 @@ function Projects() {
           >
             <div className="relative group">
               <img
-                src={dd.imagee}
+                src={dd.image}
                 alt=""
                 className="rounded-lg w-[400px] xl:w-[300px] transition-all"
               />
@@ -193,4 +193,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+

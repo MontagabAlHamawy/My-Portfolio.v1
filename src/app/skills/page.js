@@ -15,20 +15,20 @@ import {
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 export const ProgramS = [
-  { name: "HTML", Experience: 93, icone: <FaHtml5 /> },
-  { name: "CSS", Experience: 90, icone: <FaCss3 /> },
-  { name: "JS", Experience: 68, icone: <FaSquareJs /> },
-  { name: "TS", Experience: 25, icone: <BiLogoTypescript /> },
-  { name: "React", Experience: 20, icone: <FaReact /> },
-  { name: "Next.js", Experience: 35, icone: <SiNextdotjs /> },
-  { name: "Bootstrap", Experience: 55, icone: <FaBootstrap /> },
-  { name: "Tailwind", Experience: 67, icone: <SiTailwindcss /> },
-  { name: "WordPress", Experience: 40, icone: <FaWordpress /> },
-  { name: "Git", Experience: 53, icone: <FaGit /> },
+  { name: "HTML", Experience: 93, icon: <FaHtml5 /> },
+  { name: "CSS", Experience: 90, icon: <FaCss3 /> },
+  { name: "JS", Experience: 68, icon: <FaSquareJs /> },
+  { name: "TS", Experience: 25, icon: <BiLogoTypescript /> },
+  { name: "React", Experience: 20, icon: <FaReact /> },
+  { name: "Next.js", Experience: 35, icon: <SiNextdotjs /> },
+  { name: "Bootstrap", Experience: 55, icon: <FaBootstrap /> },
+  { name: "Tailwind", Experience: 67, icon: <SiTailwindcss /> },
+  { name: "WordPress", Experience: 40, icon: <FaWordpress /> },
+  { name: "Git", Experience: 53, icon: <FaGit /> },
 ];
 export const Languages = [
-  { name: "Arabic", Experience: 70, icone: <div>Ar</div> },
-  { name: "English", Experience: 1, icone: <div>En</div> },
+  { name: "Arabic", Experience: 70, icon: <div>Ar</div> },
+  { name: "English", Experience: 1, icon: <div>En</div> },
 ];
 
 function Skills() {
@@ -45,7 +45,7 @@ function Skills() {
           variants={fadeIn("down", "tween", 0.2, 1)}
           className="text-2xl text-white font-extralight uppercase "
         >
-          Programing Skills
+          Programming Skills
         </motion.h1>
       </div>
       <div className="grid grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-5 xl:gap-x-16 xl:gap-y-10">
@@ -66,7 +66,7 @@ function Skills() {
                     style={{ background: conicGradient }}
                   >
                     <span className="relative font-bold text-white transition-all hover:text-accent text-4xl">
-                      {link.icone}
+                      {link.icon}
                     </span>
                     {/* <p className="text-base font-medium absolute bottom-[6px]">
                       {link.Experience}%
@@ -102,7 +102,7 @@ function Skills() {
                     style={{ background: conicGradient }}
                   >
                     <div className="relative  font-bold text-white hover:text-accent text-2xl  xl:text-3xl">
-                      {link.icone}
+                      {link.icon}
                     </div>
                     {/* <span className="text-base font-medium absolute bottom-[6px]">
                       {link.Experience}%

@@ -13,11 +13,11 @@ import {
 } from "react-icons/pi";
 
 export const HeadData = [
-  { name: "Facebook", path: "https://facebook.com/montagab.alhamawy/", icone: <PiFacebookLogo /> },
-  { name: "Instagram", path: "https://instagram.com/m0ntagab/", icone: <PiInstagramLogo /> },
-  { name: "Telegram", path: "https://t.me/M0ntagab/", icone: <PiTelegramLogo /> },
-  { name: "Github", path: "https://github.com/MontagabAlHamawy/", icone: <PiGithubLogo /> },
-  { name: "Linkedin", path: "https://www.linkedin.com/in/montagab-alhamawy/", icone: <PiLinkedinLogo /> },
+  { name: "Facebook", path: "https://facebook.com/montagab.alhamawy/", icon: <PiFacebookLogo /> },
+  { name: "Instagram", path: "https://instagram.com/m0ntagab/", icon: <PiInstagramLogo /> },
+  { name: "Telegram", path: "https://t.me/M0ntagab/", icon: <PiTelegramLogo /> },
+  { name: "Github", path: "https://github.com/MontagabAlHamawy/", icon: <PiGithubLogo /> },
+  { name: "Linkedin", path: "https://www.linkedin.com/in/montagab-alhamawy/", icon: <PiLinkedinLogo /> },
 ];
 
 function Header() {
@@ -44,7 +44,7 @@ function Header() {
             return (
               <Link key={index} href={link.path} aria-label={link.name} >
                 <nav className="text-2xl xl:text-xl text-white hover:text-accent transition-all">
-                  {link.icone}
+                  {link.icon}
                 </nav>
               </Link>
             );
