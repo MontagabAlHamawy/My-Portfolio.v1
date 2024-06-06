@@ -13,7 +13,7 @@ To install the Project :
 
 ```bash
 
-git clone [https://github.com/MontagabAlHamawy/Portfolio2.git](https://github.com/MontagabAlHamawy/My-Portfolio.v1.git)
+git clone https://github.com/MontagabAlHamawy/My-Portfolio.v1.git
 # then
 npm i
 # then 
